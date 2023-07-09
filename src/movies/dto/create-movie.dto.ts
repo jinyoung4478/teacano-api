@@ -1,4 +1,9 @@
-import { IsString, IsNumber } from 'class-validator';
+import { IsString, IsNumber, IsOptional } from 'class-validator';
+
+/**
+ * Ref class-validator
+ * https://github.com/typestack/class-validator
+ */
 
 export class CreateMovieDto {
   @IsString()
@@ -7,6 +12,7 @@ export class CreateMovieDto {
   @IsNumber()
   readonly year: number;
 
+  @IsOptional()
   @IsString({ each: true })
   readonly genres: string[];
 }
