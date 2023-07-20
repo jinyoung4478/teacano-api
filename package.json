@@ -1,8 +1,8 @@
 {
   "name": "teacano-api",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Teacano API server",
+  "author": "HarryK",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
